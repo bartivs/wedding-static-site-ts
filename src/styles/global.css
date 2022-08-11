@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: sans-serif;
+  src: url('../fonts/Poppins-Regular.ttf') format('ttf');
+}
+
+@layer base {
+  main {
+    @apply text-gray-600 font-sand_serif;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  #noise-filter {
+    filter: grayscale(103%) sepia(14%) brightness(130%) hue-rotate(24deg);
+    webkit-filter: grayscale(103%) sepia(14%) brightness(130%) hue-rotate(24deg);
+    -moz-filter: grayscale(103%) sepia(14%) brightness(130%) hue-rotate(24deg);
+  }
+}
