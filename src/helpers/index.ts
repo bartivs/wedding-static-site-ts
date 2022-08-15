@@ -35,7 +35,7 @@ export function useWindowSize() {
 }
 
 export function useIsMovil() {
-  const [isMovil, setIsMovil] = useState(window !== undefined ? window.innerWidth < 768 : false);
+  const [isMovil, setIsMovil] = useState(typeof window !== 'undefined' ? window?.innerWidth < 768 : false);
 
   useLayoutEffect(() => {
     const handleResize = () => {
