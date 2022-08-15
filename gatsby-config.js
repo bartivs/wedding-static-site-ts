@@ -1,6 +1,4 @@
-import type { GatsbyConfig } from 'gatsby';
-
-const config: GatsbyConfig = {
+const config = {
   siteMetadata: {
     title: `wedding-static-site`,
     siteUrl: `https://www.yourdomain.tld`,
@@ -22,7 +20,13 @@ const config: GatsbyConfig = {
       },
       __key: 'images',
     },
+    // {
+    //   resolve: `gatsby-plugin-typescript`,
+    //   options: {
+    //     isTSX: true, // defaults to false
+    //     jsxPragma: `jsx`, // defaults to "React"
+    //     allExtensions: true, // defaults to false
+    //   },
+    // },
   ],
 };
-
-export default config;
