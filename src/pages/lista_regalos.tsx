@@ -18,7 +18,7 @@ const RegalosPage = () => {
             sugerimos.
           </p>
         </div>
-        {/* <div className="pt-4 flex flex-col items-stretch gap-4 w-40">
+        <div className="pt-4 flex flex-col items-stretch gap-4 w-40">
           <Link
             to="https://www.nuevaamericana.com.py/listaregalos/157079"
             className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
@@ -37,7 +37,7 @@ const RegalosPage = () => {
           >
             Cuenta Bancaria
           </Link>
-        </div> */}
+        </div>
       </div>
     </Page>
   );
