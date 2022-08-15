@@ -47,9 +47,9 @@ const IndexPage = () => {
               <h2 className="text-center font-cursive">Dos mil veintidos</h2>
             </div>
             <div className="pt-4">
-              <Link to="/lista_regalos">
+              {/* <Link to="/lista_regalos">
                 <h2 className="text-center font-cursive hover:text-yellow-300">Lista de Regalos</h2>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
