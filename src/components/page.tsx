@@ -18,14 +18,17 @@ export const Page: React.FC<Props> = (props) => {
           {isMovil && <div className="pl-4"></div>}
         </div>
         <div id="noise-filter" className="absolute top-0 h-screen w-screen flex flex-col justify-between -z-10">
-          <svg viewBox={`0 0 ${screenSize?.width} ${screenSize?.height}`} xmlns="http://www.w3.org/2000/svg">
-            <filter id="noiseFilter">
-              <feTurbulence type="fractalNoise" baseFrequency="1.94" numOctaves="4" stitchTiles="stitch" />
-            </filter>
+          {!!screenSize?.height && !!screenSize.width && (
+            <svg viewBox={`0 0 ${screenSize?.width} ${screenSize?.height}`} xmlns="http://www.w3.org/2000/svg">
+              <filter id="noiseFilter">
+                <feTurbulence type="fractalNoise" baseFrequency="1.94" numOctaves="4" stitchTiles="stitch" />
+              </filter>
 
-            <rect width="100%" height="100%" filter="url(#noiseFilter)" />
-          </svg>
+              <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+            </svg>
+          )}
         </div>
+
         {!isMovil && (
           <div className="absolute top-0 h-screen w-screen flex flex-col justify-between -z-10">
             <StaticImage src={'../images/flor1.png'} className={'w-80 h-auto z-10'} alt="flores" />
