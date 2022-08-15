@@ -1,8 +1,8 @@
-import { Link } from 'gatsby'
-import * as React from 'react'
-import { Page } from '../components/page'
-import { SEO } from '../components/seo'
-import { useIsMovil, useWindowSize } from '../helpers'
+import { Link } from 'gatsby';
+import * as React from 'react';
+import { Page } from '../components/page';
+import { SEO } from '../components/seo';
+import { useIsMovil, useWindowSize } from '../helpers';
 
 const RegalosPage = () => {
   const screenSize = useWindowSize();
@@ -19,18 +19,18 @@ const RegalosPage = () => {
           </p>
         </div>
         <div className="pt-4 flex flex-col items-stretch gap-4 w-40">
-          <Link
-            to="https://www.nuevaamericana.com.py/listaregalos/157079"
+          <a
+            href="https://www.nuevaamericana.com.py/listaregalos/157079"
             className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
           >
             Nueva Americana
-          </Link>
-          <Link
-            to="https://www.tupi.com.py/regalos_en_lista/5054/Boda-de-Sara-Miranda-y-Oscar-Bartolome-Valdez-el-30-09-2022"
+          </a>
+          <a
+            href="https://www.tupi.com.py/regalos_en_lista/5054/Boda-de-Sara-Miranda-y-Oscar-Bartolome-Valdez-el-30-09-2022"
             className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
           >
             Tupi
-          </Link>
+          </a>
           <Link
             to="../cuenta_bancaria"
             className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
