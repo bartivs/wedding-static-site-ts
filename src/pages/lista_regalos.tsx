@@ -19,22 +19,16 @@ const RegalosPage = () => {
           </p>
         </div>
         <div className="pt-4 flex flex-col items-stretch gap-4 w-40">
-          <a
-            href="https://www.nuevaamericana.com.py/listaregalos/157079"
-            className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
-          >
+          <a href="https://www.nuevaamericana.com.py/listaregalos/157079" className="link-button">
             Nueva Americana
           </a>
           <a
             href="https://www.tupi.com.py/regalos_en_lista/5054/Boda-de-Sara-Miranda-y-Oscar-Bartolome-Valdez-el-30-09-2022"
-            className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
+            className="link-button"
           >
             Tupi
           </a>
-          <Link
-            to="../cuenta_bancaria"
-            className="text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 rounded-lg"
-          >
+          <Link to="/cuenta_bancaria" className="link-button">
             Cuenta Bancaria
           </Link>
         </div>

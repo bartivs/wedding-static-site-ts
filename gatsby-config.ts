@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
+  pathPrefix: `/`,
   siteMetadata: {
     title: `wedding-static-site`,
     siteUrl: `https://www.yourdomain.tld`,
@@ -12,7 +13,23 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`, `png`, `jpg`],
+          placeholder: `none`,
+          // background: 'none',
+          breakpoints: [750, 1080, 1366, 1920],
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',

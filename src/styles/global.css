@@ -24,4 +24,8 @@
     webkit-filter: grayscale(103%) sepia(14%) brightness(130%) hue-rotate(24deg);
     -moz-filter: grayscale(103%) sepia(14%) brightness(130%) hue-rotate(24deg);
   }
+  
+  .link-button{
+    @apply text-center border-solid border-2 border-gray-500 hover:border-gray-600 py-2 bg-gray-400 text-white rounded-lg
+  }
 }
