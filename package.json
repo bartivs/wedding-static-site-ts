@@ -23,6 +23,7 @@
     "@react-icons/all-files": "^4.1.0",
     "add": "^2.0.6",
     "gatsby": "^4.20.0",
+    "gatsby-plugin-google-gtag": "^4.21.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-page-creator": "^4.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
