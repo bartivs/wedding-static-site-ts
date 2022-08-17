@@ -5,6 +5,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `wedding-static-site`,
     siteUrl: `https://www.yourdomain.tld`,
+    image: `./src/images/icon.png`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
