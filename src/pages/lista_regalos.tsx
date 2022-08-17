@@ -29,7 +29,7 @@ const RegalosPage = () => {
             Tupi
           </a>
           <Link to="/cuenta_bancaria" className="link-button">
-            Cuenta Bancaria
+            Deposito Bancario
           </Link>
         </div>
       </div>
