@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 interface Props {
   title?: string;
@@ -12,11 +12,12 @@ export const SEO: React.FC<Props> = ({ title, description, pathname, children })
     title: title || 'Sara y Barti',
     description: description || 'Invitacion de boda Sara y Barti',
   };
+ 
   return (
     <>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-      {  <meta name="image" content={"../images/icon.png"} />}
+      <meta name="image" content={require('../images/icon.png').default} />
       <link
         rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💍</text></svg>"
