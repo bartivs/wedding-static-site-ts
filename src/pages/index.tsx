@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <Page principalPage>
       <div className="flex  flex-col z-50 ">
-        <div className="pt-20 px-8 lg:px-0">
+        <div className="pt-10 px-8 lg:px-0">
           <div className="px-4  py-0 ">
             <h1 className="text-center font-cursive text-6xl lg:text-9xl z-50 ">Sara</h1>
             <div className="pl-14">
@@ -31,16 +31,16 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="py-10 px-4">
+        <div className="pt-10 px-4">
           <h2 className="text-center  ">
-            Junto a nuestras familias
+            ¡Nos Casamos! Y junto a nuestras familias
             <br />
             Te invitamos a celebrar nuestra boda.
           </h2>
         </div>
         <div className="px-10 lg:px-[30vw]  py-4 ">
           <div className="flex items-center flex-col">
-            <div className="py-10 grid grid-cols-3 gap-4">
+            <div className=" grid grid-cols-3 gap-4">
               <div className="px-4 h-full py-5">
                 <div className="h-full border-solid border-x-0 border-y-2 flex items-center justify-center px-8  border-gray-600">
                   <div>
@@ -59,13 +59,21 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <a className="py-10 flex flex-col items-center" href='https://goo.gl/maps/uLE98M8PVKhGjHiEA'>
+            <a className="py-4 flex flex-col items-center" href="https://goo.gl/maps/uLE98M8PVKhGjHiEA">
               <GrMap className={' mb-4 '} size={30} />
               <h1 className="text-center text-3xl font-cursive">Villa Jardín - Luque</h1>
             </a>
-            <Link to="/lista_regalos" className="link-button px-2 self-center mt-2 ">
-              Lista de Regalos
-            </Link>
+            <div className="flex flex-col">
+              <Link to="/lista_regalos" className="self-stretch link-button px-2 mt-2 ">
+                Lista de Regalos
+              </Link>
+              <a
+                href="https://docs.google.com/forms/d/1_QcGeVxQprKDqJMJc7hf-SLCI8KIG0tAEs9ueMHFn-E/"
+                className="link-button px-2 self-center mt-2 "
+              >
+                Confirmar Asistencia
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ export const Page: React.FC<Props> = (props) => {
           </div>
         </div>
       )}
-      <div className="flex justify-center flex-col z-50" style={{ gridArea: '1/1' }}>
+      <div className="flex flex-col z-50" style={{ gridArea: '1/1' }}>
         {!props.principalPage && (
           <div className="flex items-center justify-center flex-col w-full  h-[30vh]">
             <Link to="/" className="px-4 py-11 rounded-full bg-gray-400 w-auto  m-4 text-white ">
