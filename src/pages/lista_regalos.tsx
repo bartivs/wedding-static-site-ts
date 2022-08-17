@@ -10,7 +10,7 @@ const RegalosPage = () => {
 
   return (
     <Page>
-      <div className="h-screen w-screen flex  items-center flex-col z-50">
+      <div className="flex  items-center flex-col z-50">
         <div className="px-4 text-center lg:px-[20rem] py-4">
           <h1 className="text-4xl z-50 mb-10">Regalos</h1>
           <p className="my-8 lg:text-lg">

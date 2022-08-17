@@ -12,7 +12,7 @@ const IndexPage = () => {
 
   return (
     <Page principalPage>
-      <div className="h-screen w-screen flex  flex-col z-50">
+      <div className="flex  flex-col z-50 ">
         <div className="pt-20 px-8 lg:px-0">
           <div className="px-4  py-0 ">
             <h1 className="text-center font-cursive text-6xl lg:text-9xl z-50 ">Sara</h1>
