@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useIsMovil, useWindowSize } from '../helpers';
 
 interface Props {
@@ -12,6 +12,8 @@ export const Page: React.FC<Props> = (props) => {
   const screenSize = useWindowSize();
   const isMovil = useIsMovil();
   const principal = useState(!!props.principalPage);
+  
+ 
 
   return (
     <main className="w-screen h-screen">
@@ -43,7 +45,7 @@ export const Page: React.FC<Props> = (props) => {
             <div /> <StaticImage src={'../images/flor2.png'} className={'w-64  h-auto self-end'} alt="flores" />
           </div>
         )}
-        {isMovil && (
+        {isMovil && screenSize && screenSize?.height > 750 && (
           <div className="absolute top-0 h-screen w-screen flex flex-col justify-between z-20">
             <div className=""></div>
             <div className="pl-4 ">

@@ -10,10 +10,10 @@ const RegalosPage = () => {
 
   return (
     <Page>
-      <div className="h-screen w-screen flex justify-center items-center flex-col z-50">
+      <div className="h-screen w-screen flex  items-center flex-col z-50">
         <div className="px-4 text-center lg:px-[20rem] py-4">
-          <h1 className="font-cursive  text-4xl lg:text-9xl z-50 ">Regalos</h1>
-          <p className="mt-8">
+          <h1 className="text-4xl z-50 mb-10">Regalos</h1>
+          <p className="my-8 lg:text-lg">
             Lo más importante es tu presencia, pero si deseas entregarnos un regalo, estas son algunas opciones que
             sugerimos.
           </p>
