@@ -10,7 +10,7 @@ interface Props {
 export const SEO: React.FC<Props> = ({ title, description, pathname, children }) => {
   const seo = {
     title: title || 'Sara y Barti',
-    description: description || 'Invitacion a nuestra boda',
+    description: description || 'Invitación a nuestra boda',
   };
 
   return (
