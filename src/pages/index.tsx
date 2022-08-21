@@ -34,15 +34,16 @@ const IndexPage = () => {
         <div className="pt-10 px-4">
           <h2 className="text-center  ">
             ¡Nos Casamos! Y junto a nuestras familias
-            <br />
-            Te invitamos a celebrar nuestra boda.
+           {!isMovil && <br />} 
+           {isMovil && <>{" "}</>} 
+            te invitamos a celebrar nuestra boda.
           </h2>
         </div>
         <div className="px-10 lg:px-[30vw]  py-4 ">
           <div className="flex items-center flex-col">
             <div className=" grid grid-cols-3 gap-4">
-              <div className="px-4 h-full py-5">
-                <div className="h-full border-solid border-x-0 border-y-2 flex items-center justify-center px-8  border-gray-600">
+              <div className="px-4  py-5 self-stretch">
+                <div className="h-full border-solid py-2 border-x-0 border-y-2 flex items-center justify-center px-8  border-gray-600">
                   <div>
                     <span className="text-center">VIERNES</span>
                   </div>
@@ -53,8 +54,8 @@ const IndexPage = () => {
                 <h1 className="text-center font-extrabold text-3xl">30</h1>
                 <span>2022 </span>
               </div>
-              <div className="px-4 py-5 h-full">
-                <div className="h-full border-solid border-x-0 border-y-2 flex items-center justify-center px-4 border-gray-600">
+              <div className="px-4 py-5 self-stretch">
+                <div className="h-full border-solid py-2 border-x-0 border-y-2 flex items-center justify-center px-4 border-gray-600">
                   <span className="text-center text-sm">21:00 HORAS</span>
                 </div>
               </div>
