@@ -14,7 +14,7 @@ export const Page: React.FC<Props> = (props) => {
   const principal = useState(!!props.principalPage);
 
   return (
-    <main className="w-screen h-screen grid ">
+    <main className="w-screen h-screen grid bg-[#f6f8f300]">
       <div id="noise-filter" className="justify-between -z-10" style={{ gridArea: '1/1' }}>
         {!!screenSize?.height && !!screenSize.width && (
           <svg viewBox={`0 0 ${screenSize?.width} ${screenSize?.height}`} xmlns="http://www.w3.org/2000/svg">
